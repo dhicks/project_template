@@ -4,17 +4,13 @@ SCRIPTS_WD = scripts
 
 all: pipe talk paper
 
-paper: $(PAPER_DIR)/paper.pdf
-$(PAPER_DIR)/paper.pdf: $(PAPER_DIR)/paper.md
+paper: 
 	@echo "paper"
-	cd $(PAPER_DIR); pandoc header.yaml paper.md \
-                     -o paper.pdf \
-                     --filter=pandoc-citeproc --pdf-engine=lualatex
+	cd $(PAPER_DIR); $(MAKE)
 
-talk: $(TALK_DIR)/talk.pdf
-$(TALK_DIR)/talk.pdf: $(TALK_DIR)/talk.tex
+talk: 
 	@echo "build talk/slides"
-	cd $(TALK_DIR); touch talk.pdf
+	cd $(TALK_DIR); $(MAKE)
 	
 pipe: 
 	@echo "pipe"

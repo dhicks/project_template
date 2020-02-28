@@ -1,3 +1,6 @@
 paper.pdf: paper.md
-	cd ..; $(MAKE) paper
+	pandoc header.yaml paper.md \
+                     -o paper.pdf \
+                     --filter=pandoc-citeproc --pdf-engine=lualatex
+
 	
