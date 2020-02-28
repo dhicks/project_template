@@ -10,7 +10,7 @@ This repository contains a template for my projects.
 - `plots`: Plots and other figures created by the pipeline scripts
 	- Alternative: `output` if the project creates several tables or other outputs
 
-Files in these three folders should use a sequential naming convention:  
+Files in these three folders should generally use a sequential naming convention:  
 - Scripts in `scripts` should have filenames starting with `01_`:
 	- `01_scrape.R`
 	- `02_parse.R`
