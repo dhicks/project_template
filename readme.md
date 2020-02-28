@@ -33,4 +33,5 @@ Files in these three folders should use a sequential naming convention:
 	
 - `Makefile` should include the following targets: 
 	- `all`: pipe, talk, and paper
-	- `pipe`: `make` the output files for the analysis pipeline
+	- `pipe`: `make` the analysis pipeline
+	
