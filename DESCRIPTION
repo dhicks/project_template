@@ -1,0 +1,9 @@
+Package: 
+Version: 0.0.0.9900
+Title: 
+Author: Daniel J. Hicks
+Maintainer: Daniel J. Hicks <hicks.daniel.j@gmail.com>
+Depends: R (>= 4.0.0)
+Description: 
+License: 
+Imports: 

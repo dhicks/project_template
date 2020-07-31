@@ -21,6 +21,8 @@ Files in these three folders should generally use a sequential naming convention
 	- `01_` indicates plots and intermediate data files produced by script number `01`, and so on
 	
 - `R`: R files containing specialized functions used by the analysis script
+	- Load in scripts using `devtools::load_all('..')`
+	- Requires valid `DESCRIPTION`
 
 - `talk`: Files used to generate the talk/slides
 
@@ -34,4 +36,7 @@ Files in these three folders should generally use a sequential naming convention
 - `Makefile` should include the following targets: 
 	- `all`: pipe, talk, and paper
 	- `pipe`: `make` the analysis pipeline
+	
+- `DESCRIPTION`: Required for the minimal valid package structure expected by `devtools::load_all()`
+	- See <http://www.hep.by/gnu/r-patched/r-exts/R-exts_4.html>
 	
