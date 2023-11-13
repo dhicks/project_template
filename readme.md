@@ -17,8 +17,8 @@ This repository contains a template for my projects.
 
 - `paper`: Files used to generate the paper
 	- `paper.qmd` containing the paper body
-	- `header.yaml` containing some nice typesetting
-	- `bib` file should be placed in the top level, for use by both paper and talk
+	- `_quarto.yml` containing some nice typesetting
+	- `bibfile.yaml` file should be placed in the top level, for use by both paper and talk
 	- The project makefile should copy/rename figures from `plots` to `paper`
 
 - `talk`: Files used to generate the talk/slides
