@@ -1,0 +1,11 @@
+reference-section-title: "References"
+
+format:
+  pdf: 
+    indent: true
+    numbersections: true
+    colorlinks: true
+    geometry: "margin=1.25in"
+    mainfont: "Georgia"
+    fontsize: 11pt
+    link-citations: true

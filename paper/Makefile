@@ -1,17 +1,20 @@
-all: pdf
+all: html
 
-pdf: paper.odf
-paper.pdf: paper.md
-	pandoc header.yaml paper.md \
-                     -o paper.pdf \
-                     --filter=pandoc-citeproc \ 
-                     --filter=pandoc-crossref \
-                     --pdf-engine=lualatex
+bibfile := ../bibfile.yaml
 
+html: paper.html
+paper.html: paper.qmd # $(bibfile)
+	quarto render paper.qmd --to html
+	
+pdf: paper.pdf
+paper.pdf: paper.qmd # $(bibfile)
+	quarto render paper.qmd --to pdf
+	
 docx: paper.docx
-paper.docx: paper.md
-	pandoc header.yaml paper.md \
-                    -o paper.docx \
-                    --filter=pandoc-citeproc \
-                    --filter=pandoc-crossref
+paper.docx: paper.qmd # $(bibfile)
+	quarto render paper.qmd --to docx
 
+.PHONY: clean
+clean:
+	rm -f *.pdf *.docx *.html
+	rm -dr paper_files/

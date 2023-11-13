@@ -1,11 +1,11 @@
 ---
 title: "Title"
 author: Daniel J. Hicks
-date: Typeset \today
+date: "last-modified" 
 abstract: |
-	abstract
+    abstract
 
-<!--bibliography: ../bibfile.yaml-->
+# bibliography: ../bibfile.yaml
 ---
 
 # Introduction #
