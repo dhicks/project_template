@@ -16,8 +16,7 @@ This repository contains a template for my projects.
 	- Requires valid `DESCRIPTION`
 
 - `paper`: Files used to generate the paper
-	- `paper.md` containing the paper body
-		- Alternative: `paper.Rmd` for an Rmarkdown version
+	- `paper.qmd` containing the paper body
 	- `header.yaml` containing some nice typesetting
 	- `bib` file should be placed in the top level, for use by both paper and talk
 	- The project makefile should copy/rename figures from `plots` to `paper`
