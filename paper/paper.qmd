@@ -5,7 +5,7 @@ date: Typeset \today
 abstract: |
 	abstract
 
-<!--bibliography: ../bibfile.bib-->
+<!--bibliography: ../bibfile.yaml-->
 ---
 
 # Introduction #
